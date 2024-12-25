@@ -4,10 +4,9 @@ import about from '../../assets/ventes_about.avif'
 import { IconArrowNarrowRight } from '@tabler/icons-react'
 function Whoweare() {
     return (
-        <Container size={1500} py={40} mt={30}>
+        <Container size={1400} py={40} mt={30}>
             <Grid>
-                <Grid.Col span={{ base: 12, md: 1, lg: 1 }}></Grid.Col>
-                <Grid.Col span={{ base: 12, md: 5, lg: 5 }}>
+                <Grid.Col span={{ base: 12, md: 6, lg: 6}}>
                     <Image src={about} alt='img' height={400} />
                 </Grid.Col>
                 <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>

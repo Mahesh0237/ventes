@@ -1,39 +1,52 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../assets/venets_logo.jpg'
-import { useWindowScroll } from '@mantine/hooks';
-import { Group } from '@mantine/core';
+import { Drawer } from '@mantine/core'
+import Drawernav from './Drawernav'
 
 function Header() {
-    const [scroll, scrollTo] = useWindowScroll();
+
+    const [drawer, setDrawer] = useState(false)
+    const openDrawer = () => {
+        setDrawer(true)
+    }
+    const closeDrawer = () => {
+        setDrawer(false)
+    }
     return (
         <header className="minimized" >
             <div className="section-wrapper">
                 <div className="header-wrapper">
                     <div className="site-logo">
-                        <div style={{ height: "60px", width: "60px" }}>
-                            <a href="/" >
-                                <img src={logo} width="100%" height="100%" />
-                            </a>
-                        </div>
+                        <a href="/" rel="home">
+                            <img src={logo} width="70px" height="70px" />
+                        </a>
                     </div>
                     <nav className="main-navigation">
                         <div className="menu-main-menu-container">
                             <ul>
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/aboutus">About Us</a></li>
-                                <li><a href="#">Services</a></li>
                                 <li><a href="/projects">Projects</a></li>
                                 <li><a href="/contactus">Contact Us</a></li>
                             </ul>
                         </div>
                     </nav>
-                    <button className="hamburger hamburger--spring" type="button">
+                    <button className="hamburger hamburger--spring" type="button" onClick={openDrawer}>
                         <span className="hamburger-box">
                             <span className="hamburger-inner"></span>
                         </span>
                     </button>
                 </div>
             </div>
+            <Drawer
+                opened={drawer}
+                onClose={closeDrawer}
+                zIndex={99999}
+                size="xs"
+                withCloseButton={false}
+            >
+                <Drawernav />
+            </Drawer>
         </header>
     )
 }

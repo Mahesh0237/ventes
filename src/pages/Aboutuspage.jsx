@@ -1,16 +1,15 @@
 import React from 'react'
-import Headertwo from '../components/shared/Headertwo'
 import Footer from '../components/shared/Footer'
 import Aboutuswrapper from '../components/aboutus/Aboutuswrapper'
 import Header from '../components/shared/Header'
-import Contactform from '../components/homewrapper/Contactform'
+import Getintouchwithus from '../components/shared/Getintouchwithus'
 
 function Aboutuspage() {
     return (
         <div className="body-wrapper">
             <Header />
             <Aboutuswrapper />
-            <Contactform />
+            <Getintouchwithus/>
             <Footer />
         </div>
     )

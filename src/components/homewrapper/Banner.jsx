@@ -4,9 +4,11 @@ import { useRef } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
 import { useViewportSize } from '@mantine/hooks'
 import { Carousel } from '@mantine/carousel';
-import slider1 from '../../assets/ventes_slider4.jpeg'
-import slider2 from '../../assets/ventes_slider5.jpg'
-import slider3 from '../../assets/ventes_slider6.jpg'
+import slider1 from '../../assets/ventes_slider1.jpeg'
+import slider2 from '../../assets/ventes_slider2.jpeg'
+import slider3 from '../../assets/ventes_slider3.jpeg'
+import slider4 from '../../assets/ventes_slider4.jpeg'
+import slider5 from '../../assets/ventes_slider5.jpeg'
 function Banner() {
     const autoplay = useRef(Autoplay({ delay: 2000 }));
     const { height, width } = useViewportSize();
@@ -23,7 +25,7 @@ function Banner() {
         updateleftpos = "28%"
     }
     return (
-        <Stack mt={75}>
+        <Stack mt={90}>
             <div style={{ height: updateheight, display: 'flex' }}>
                 <Carousel
                     withControls={false}
@@ -44,6 +46,12 @@ function Banner() {
                     </Carousel.Slide>
                     <Carousel.Slide>
                         <img src={slider3} width="100%" height="100%" />
+                    </Carousel.Slide>
+                    <Carousel.Slide>
+                        <img src={slider4} width="100%" height="100%" />
+                    </Carousel.Slide>
+                    <Carousel.Slide>
+                        <img src={slider5} width="100%" height="100%" />
                     </Carousel.Slide>
                 </Carousel>
             </div>

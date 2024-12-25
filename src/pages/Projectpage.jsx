@@ -2,13 +2,13 @@ import React from 'react'
 import Footer from '../components/shared/Footer'
 import Projectswrapper from '../components/projects/Projectswrapper'
 import Header from '../components/shared/Header'
-import Contactform from '../components/homewrapper/Contactform'
+import Getintouchwithus from '../components/shared/Getintouchwithus'
 function Projectpage() {
     return (
         <div className="body-wrapper">
             <Header />
-            <Projectswrapper />
-            <Contactform />
+            <Projectswrapper/>
+            <Getintouchwithus/>
             <Footer />
         </div>
     )

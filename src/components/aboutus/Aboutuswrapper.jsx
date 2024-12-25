@@ -9,9 +9,9 @@ import Autoplay from 'embla-carousel-autoplay';
 function Aboutuswrapper() {
     const autoplay = useRef(Autoplay({ delay: 2000 }));
     return (
-        <main className="about-page margin-top-page">
+        <Container size={1400} mt={120}>
             <section className='aboutus my-5'>
-                <Grid px={50} mt={100}>
+                <Grid >
                     <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
                         <Carousel
                             withIndicators
@@ -38,8 +38,8 @@ function Aboutuswrapper() {
                     </Grid.Col>
                     <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
                         <Stack px={25}>
-                            <Text style={{ fontSize: "25px" }} ta="center" fw={700}>About Us</Text>
-                            <Text size='md'>
+                            <Text style={{ fontSize: "30px" }} ta="center" fw={700}>About Us</Text>
+                            <Text size='lg'>
                                 VENTES was established in 2011, with apartment construction as its main focus, we strive to
                                 build superior apartments for our customers with the highest level of quality construction
                                 services at fair and market-competitive prices. We research, analyze, and determine the
@@ -54,7 +54,7 @@ function Aboutuswrapper() {
                     </Grid.Col>
                 </Grid>
             </section>
-            <Container size={1400} py={30}>
+            <Stack mb={30}>
                 <div className='row'>
                     <div className='col-md-4 '>
                         <Stack py={20} >
@@ -95,8 +95,8 @@ function Aboutuswrapper() {
                         </Stack>
                     </div>
                 </div>
-            </Container>
-        </main>
+            </Stack>
+        </Container>
     )
 }
 

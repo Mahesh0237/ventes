@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 
+* {
+    box-sizing: border-box;
+}
+
+::before,
+::after {
+    box-sizing: inherit;
+}
 
 /* Document ========================================================================== */
 /** * 1. Correct the line height in all browsers. * 2. Prevent adjustments of font size after orientation changes in iOS. * 3. Remove gray overlay on links for iOS. */
@@ -2459,9 +2467,9 @@ footer .footer-bottom-wrapper .footer-col.get-in-touch .footer-contact-wrapper .
     }
 }
 
-/* footer .footer-bottom-wrapper .footer-col.get-in-touch .footer-contact-wrapper .footer-contact-col .footer-contact-col-item {
+footer .footer-bottom-wrapper .footer-col.get-in-touch .footer-contact-wrapper .footer-contact-col .footer-contact-col-item {
     margin-bottom: 30px;
-} */
+}
 
 footer .footer-bottom-wrapper .footer-col.get-in-touch .footer-contact-wrapper .footer-contact-col .footer-contact-col-item:last-child {
     margin-bottom: 0;
@@ -3875,7 +3883,7 @@ main.dsr-home-page .latest-news .latest-news-wrapper {
 
 main.dsr-home-page .latest-listings {
     padding: 4rem 0;
-    /* background-color: #EEEFF1; */
+    background-color: #EEEFF1;
 }
 
 @media screen and (max-width: 768px) {
@@ -11874,18 +11882,8 @@ body.modal-open {
 
 }
 
-
-.whatwedocard {
-    background-color: white;
-    transition: background-color 0.3s ease;
-}
-
-.whatwedocard:hover {
-    background-color: #a32a76;
-    cursor: pointer;
-}
-
-.whatwedocard:hover,
-p {
-    color: white;
-}
+.drawernav .active {
+    background-color: rgb(241 243 244);
+    border-left: 4px solid #7e1454;
+    color: #7e1454;
+  }

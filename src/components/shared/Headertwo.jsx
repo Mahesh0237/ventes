@@ -1,7 +1,6 @@
 import React from 'react'
 import logo from '../../assets/venets_logo.jpg'
 import { useWindowScroll } from '@mantine/hooks';
-import { Group } from '@mantine/core';
 
 function Headertwo() {
     const [scroll, scrollTo] = useWindowScroll();
@@ -10,11 +9,9 @@ function Headertwo() {
             <div className="section-wrapper">
                 <div className="header-wrapper">
                     <div className="site-logo">
-                        <div style={{ height: "60px", width: "60px" }}>
-                            <a href="/" >
-                                <img src={logo} width="100%" height="100%" />
-                            </a>
-                        </div>
+                        <a href="/" rel="home">
+                            <img src={logo} width="50px" />
+                        </a>
                     </div>
                     <nav className="main-navigation">
                         <div className="menu-main-menu-container">

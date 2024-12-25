@@ -5,7 +5,7 @@ import Projectswrapper from '../components/homewrapper/Projectswrapper'
 import Footer from '../components/shared/Footer'
 import Whoweare from '../components/homewrapper/Whoweare'
 import Whatwedo from '../components/homewrapper/Whatwedo'
-import Contactform from '../components/homewrapper/Contactform'
+import Getintouchwithus from '../components/shared/Getintouchwithus'
 function Homepage() {
     return (
         <div className="body-wrapper">
@@ -14,7 +14,7 @@ function Homepage() {
             <Whoweare />
             <Whatwedo />
             <Projectswrapper />
-            <Contactform />
+            <Getintouchwithus/>
             <Footer />
         </div>
     )
