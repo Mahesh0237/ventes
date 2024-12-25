@@ -6,8 +6,8 @@ import { NavLink } from 'react-router-dom'
 function Drawernav() {
     return (
         <div className='drawernav'>
-            <div className='text-center'>
-                <img src={logo} width="50%" height="90" alt="logo" />
+            <div >
+                <img src={logo} width="70px" height="70px" alt="logo" />
             </div>
             <Stack py={20} gap="xs">
 

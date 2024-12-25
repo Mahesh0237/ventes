@@ -13,7 +13,7 @@ function Aadhyapropertiesprojectpage() {
     return (
         <div className="body-wrapper">
             <Projectheader />
-            <Grid mt={50}>
+            <Grid mt={110}>
                 <Grid.Col span={{ base: 12, md: 8, lg: 8 }}>
                     <div style={{ position: "relative" }}>
                         <Projectbanner />

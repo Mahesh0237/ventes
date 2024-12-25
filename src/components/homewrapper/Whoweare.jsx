@@ -20,7 +20,7 @@ function Whoweare() {
                         <Text py={10}>Over the years, we've achieved significant milestones, including becoming the Launch & Strategic Partner for esteemed developers in Bangalore and managing CRM and operations for industry giants like Manyata Developers, AMT Ventures, and Valmark.</Text>
                         <Text>Powered by a robust team of over 60 seasoned professionals, we're not just meeting industry standards—we're raising them.</Text>
                         <Group pt={10}>
-                            <Button>Read More</Button>
+                            <Button color='#c20060' component='a' href='/aboutus'>Read More</Button>
                         </Group>
                     </Stack>
                 </Grid.Col>

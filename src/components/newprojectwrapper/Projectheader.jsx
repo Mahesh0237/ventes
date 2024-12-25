@@ -9,7 +9,7 @@ function Projectheader() {
             <div className="section-wrapper">
                 <div className="header-wrapper">
                     <div className="site-logo">
-                        <div style={{ height: "60px", width: "100px" }}>
+                        <div style={{ height: "70px", width: "70px" }}>
                             <a href="/" >
                                 <img src={logo} width="100%" height="100%" />
                             </a>

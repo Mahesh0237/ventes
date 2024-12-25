@@ -5,7 +5,7 @@ import Whatwedocard from './shared/Whatwedocard'
 
 function Whatwedo() {
     return (
-        <div style={{ background: "#f2f3f5" }}>
+        <div style={{ background: "#ba176a1f" }}>
             <Container size={1400} py={60}>
                 <Stack align='center'>
                     <Text fw={700} style={{ fontSize: "20px" }}> <IconArrowNarrowRight color='#cea134' size={30} />WHAT WE DO</Text>
@@ -21,13 +21,13 @@ function Whatwedo() {
                     </Grid.Col>
                     <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
                         <Whatwedocard
-                            heading="solar panel"
+                            heading="Solar panels"
                             para="we offer professional solar panel installation services for residential, commercial, and industrial properties. "
                         />
                     </Grid.Col>
                     <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
                         <Whatwedocard
-                            heading="mattress"
+                            heading="Mattress"
                             para="We offer high-quality mattress solutions as part of our furnishing services for residential and commercial properties. "
                         />
                     </Grid.Col>
@@ -39,7 +39,7 @@ function Whatwedo() {
                     </Grid.Col>
                     <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
                         <Whatwedocard
-                            heading="lead generation for any project"
+                            heading="Lead generation for any Business"
                             para="We provide expert lead generation services to help businesses in various industries connect with their target audience and convert prospects into clients"
                         />
                     </Grid.Col>

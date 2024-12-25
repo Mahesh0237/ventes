@@ -23,7 +23,7 @@ function Footer() {
                             <a href="/aboutus" className='text-white'>About Ventes</a>
                         </div>
                         <div className="link-col">
-                            <a href="/projectsdetail" className='text-white'>Projects</a>
+                            <a href="/projects" className='text-white'>Projects</a>
                         </div>
                         <div className="link-col">
                             <a href="/contactus" className='text-white'>Contact Us</a>
