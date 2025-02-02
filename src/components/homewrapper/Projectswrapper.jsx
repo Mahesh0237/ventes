@@ -17,6 +17,14 @@ import Satvik_Fortune from '../../assets/brochures/Satvik_Fortune.pdf'
 import pruthvi_homes from '../../assets/brochures/pruthvi_homes.pdf'
 import pruthvi_vivantha from '../../assets/brochures/pruthvi_vivantha.pdf'
 import Mahidhara_fortune from '../../assets/brochures/Mahidhara_fortune.pdf'
+import bank1 from '../../assets/bank1.png'
+import bank2 from '../../assets/bank2.png'
+import bank3 from '../../assets/bank3.png'
+import bank4 from '../../assets/bank4.png'
+import bank5 from '../../assets/bank5.png'
+import bank6 from '../../assets/bank6.png'
+import bank7 from '../../assets/bank7.png'
+import bank8 from '../../assets/bank8.png'
 
 function Projectswrapper() {
     const autoplay = useRef(Autoplay({ delay: 2000 }));
@@ -141,6 +149,48 @@ function Projectswrapper() {
                             </Stack>
                         </Grid.Col>
                     </Grid>
+                </section>
+
+                <section className='aboutus my-5'>
+                    <Container size={1350}>
+                        <Text style={{ fontSize: "30px" }} mb={20} fw={700}>Financial Partners</Text>
+                        <Carousel
+                            withIndicators
+                            height={80}
+                            loop
+                            withControls={false}
+                            plugins={[autoplay.current]}
+                            onMouseEnter={autoplay.current.stop}
+                            onMouseLeave={autoplay.current.reset}
+                            slideSize="20%"
+                            slideGap="md"
+                        >
+                            <Carousel.Slide>
+                                <img src={bank1} height="100%" width="100%" alt='' />
+                            </Carousel.Slide>
+                            <Carousel.Slide>
+                                <img src={bank2} height="100%" width="100%" alt='' />
+                            </Carousel.Slide>
+                            <Carousel.Slide>
+                                <img src={bank3} height="100%" width="100%" alt='' />
+                            </Carousel.Slide>
+                            <Carousel.Slide>
+                                <img src={bank4} height="100%" width="100%" alt='' />
+                            </Carousel.Slide>
+                            <Carousel.Slide>
+                                <img src={bank5} height="100%" width="100%" alt='' />
+                            </Carousel.Slide>
+                            <Carousel.Slide>
+                                <img src={bank6} height="100%" width="100%" alt='' />
+                            </Carousel.Slide>
+                            <Carousel.Slide>
+                                <img src={bank7} height="100%" width="100%" alt='' />
+                            </Carousel.Slide>
+                            <Carousel.Slide>
+                                <img src={bank8} height="100%" width="100%" alt='' />
+                            </Carousel.Slide>
+                        </Carousel>
+                    </Container>
                 </section>
             </Container>
         </main>
