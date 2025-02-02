@@ -28,10 +28,10 @@ function Banner() {
         <Stack mt={90}>
             <div style={{ height: updateheight, display: 'flex' }}>
                 <Carousel
-                    withControls={false}
+                    // withControls={false}
                     withIndicators
                     height="100%"
-                    dragFree
+                    // dragFree
                     loop
                     style={{ flex: 1 }}
                     plugins={[autoplay.current]}
