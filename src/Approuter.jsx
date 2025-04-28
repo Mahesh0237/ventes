@@ -11,6 +11,8 @@ import Pruthvivivanthaprojectpage from './pages/Pruthvivivanthaprojectpage'
 import Aadhyapropertiesprojectpage from './pages/Aadhyapropertiesprojectpage'
 import Satvikfurtuneprojectpage from './pages/Satvikfurtuneprojectpage'
 import Mahidarafortunecitypage from './pages/Mahidarafortunecitypage'
+import Sathvikdreamcitypage from './pages/Sathvikdreamcitypage'
+import Sathvikfusioncitypage from './pages/Sathvikfusioncitypage'
 function Approuter() {
     return (
         <BrowserRouter>
@@ -26,6 +28,8 @@ function Approuter() {
                 <Route path='/aadhyaproperties' element={<Aadhyapropertiesprojectpage />} />
                 <Route path='/satvikfortune' element={<Satvikfurtuneprojectpage />} />
                 <Route path='/mahidarafortunercity' element={<Mahidarafortunecitypage />} />
+                <Route path='/sathvikdreamcity' element={<Sathvikdreamcitypage />} />
+                <Route path='/sathvikfusioncity' element={<Sathvikfusioncitypage />} />
             </Routes>
         </BrowserRouter>
     )

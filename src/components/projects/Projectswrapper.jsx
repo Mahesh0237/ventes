@@ -1,6 +1,8 @@
 import React from 'react'
 import { Container, Grid, Stack, Text } from '@mantine/core'
 import latestproject1 from '../../assets/latestproject1.png'
+import sathvikdreamcity from '../../assets/sathvikdreamcity.png'
+import Sathvikfusioncity from '../../assets/Sathvikfusioncity.png'
 import latestproject2 from '../../assets/latestproject.png'
 import latestproject3 from '../../assets/latestproject4.png'
 import latestproject4 from '../../assets/latestproject3.jpg'
@@ -175,6 +177,22 @@ ideally positioned in Hsr Layout, Bangalore. It is
 spread out over a large area of 1 Acre. . 40 Units.To help keep the
 society looking as good as new there are True that
 take care of everything. 70 Units"
+                    />
+                </Grid.Col>
+                <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
+                    <Projectcard
+                        img={Sathvikfusioncity}
+                        name="Sathvik Fusion City"
+                        desc="DSR Sathvik Fusion City is a prestigious, BMRDA - approved residential layout located in the thriving suburb of Hoskote, Bangalore. Spread over a vast expanse, this well-planned township offers a perfect blend of urban connectivity and serene living,"
+                        project_link="/sathvikfusioncity"
+                    />
+                </Grid.Col>
+                <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
+                    <Projectcard
+                        img={sathvikdreamcity}
+                        name="Sathvik Dream City"
+                        desc="DSR Sathvik Dream City is a prestigious, BMRDA- approved residential layout located in the thriving suburb of Hoskote, Bangalore. Spread over a vast expanse, this well-planned township offers a perfect blend of urban connectivity and serene living,"
+                        project_link="/sathvikdreamcity"
                     />
                 </Grid.Col>
             </Grid>
