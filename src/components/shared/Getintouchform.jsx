@@ -86,8 +86,8 @@ function Getintouchform() {
             return false
         }
         emailjs
-            .sendForm('service_4nqr9zl', 'template_m9b92vo', form.current, {
-                publicKey: 'Or1S7AvX78z2ZfC7-',
+            .sendForm('service_d7wvtei', 'template_k4xn7ns', form.current, {
+                publicKey: 'bToSMvPR5w8Bzed1G',
             })
             .then(
                 () => {
@@ -169,6 +169,7 @@ function Getintouchform() {
                                     value={project}
                                     onChange={updateProject}
                                     error={projectError}
+                                    name='project'
                                     data={['Mahidhara Fortune CMR PPR City', 'Satvik Fortune City', 'Pruthvi Homes', 'Pruthvi Vivantha', 'Urban Fields', 'Aadhya Properties']}
                                 />
                             </Grid.Col>
@@ -177,12 +178,12 @@ function Getintouchform() {
                                     label="Description"
                                     placeholder='Type here....'
                                     withAsterisk
+                                    name='message'
                                     value={description}
                                     onChange={UpdateDescription}
                                     error={descriptionError}
                                 />
                             </Grid.Col>
-
                             <Button fullWidth size='md' color='dark' onClick={handleSubmit}>Submit</Button>
                         </Grid>
                     </Card.Section>

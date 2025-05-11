@@ -66,8 +66,8 @@ function Contactform() {
         }
 
         emailjs
-            .sendForm('service_4nqr9zl', 'template_m9b92vo', form.current, {
-                publicKey: 'Or1S7AvX78z2ZfC7-',
+            .sendForm('service_d7wvtei', 'template_k4xn7ns', form.current, {
+                publicKey: 'bToSMvPR5w8Bzed1G',
             })
             .then(
                 () => {
@@ -152,7 +152,7 @@ function Contactform() {
                                                     label="Projects"
                                                     placeholder="select project"
                                                     withAsterisk
-                                                    name='projects'
+                                                    name='project'
                                                     data={[
                                                         { value: 'Urban_fields', label: 'Urban fields' },
                                                         { value: 'Pruthvi_homes', label: 'Pruthvi homes' },
@@ -169,7 +169,7 @@ function Contactform() {
                                                     label="Description"
                                                     placeholder="Type here...."
                                                     withAsterisk
-                                                    name='desc'
+                                                    name='message'
                                                     value={desc}
                                                     onChange={updateDesc}
                                                     error={descError}

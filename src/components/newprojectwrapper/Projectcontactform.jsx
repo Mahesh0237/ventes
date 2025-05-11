@@ -62,8 +62,8 @@ function Projectcontactform({ pdf, project_name }) {
         }
 
         emailjs
-            .sendForm('service_4nqr9zl', 'template_m9b92vo', form.current, {
-                publicKey: 'Or1S7AvX78z2ZfC7-',
+            .sendForm('service_d7wvtei', 'template_k4xn7ns', form.current, {
+                publicKey: 'bToSMvPR5w8Bzed1G',
             })
             .then(
                 () => {
@@ -134,7 +134,7 @@ function Projectcontactform({ pdf, project_name }) {
                             />
                             <input
                                 type="hidden"
-                                name="project_name"
+                                name="project"
                                 value={project_name}
                             />
                             <Checkbox label="Agree to our Disclaimer and Terms and Conditions." size='xs' />
