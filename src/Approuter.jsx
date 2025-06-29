@@ -13,6 +13,9 @@ import Satvikfurtuneprojectpage from './pages/Satvikfurtuneprojectpage'
 import Mahidarafortunecitypage from './pages/Mahidarafortunecitypage'
 import Sathvikdreamcitypage from './pages/Sathvikdreamcitypage'
 import Sathvikfusioncitypage from './pages/Sathvikfusioncitypage'
+import Sathvikamoghaplotspage from './pages/Sathvikamoghaplotspage'
+import Sathvikfortunecity from './pages/Sathvikfortunecity'
+import Sathvikavenuepage from './pages/Sathvikavenuepage'
 function Approuter() {
     return (
         <BrowserRouter>
@@ -30,6 +33,9 @@ function Approuter() {
                 <Route path='/mahidarafortunercity' element={<Mahidarafortunecitypage />} />
                 <Route path='/sathvikdreamcity' element={<Sathvikdreamcitypage />} />
                 <Route path='/sathvikfusioncity' element={<Sathvikfusioncitypage />} />
+                <Route path='/satvikamogaplots' element={<Sathvikamoghaplotspage />} />
+                <Route path='/satvikfortunecity' element={<Sathvikfortunecity />} />
+                <Route path='/sathvikavenue' element={<Sathvikavenuepage />} />
             </Routes>
         </BrowserRouter>
     )

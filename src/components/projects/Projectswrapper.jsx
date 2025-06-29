@@ -16,6 +16,9 @@ import project6 from '../../assets/slider13.jpeg'
 import project7 from '../../assets/slider14.jpeg'
 import project8 from '../../assets/slider10.jpeg'
 import project9 from '../../assets/slider9.jpeg'
+import project10 from '../../assets/satvikamogaplot.png'
+import project11 from '../../assets/sathvik_fortune_city.png'
+import project12 from '../../assets/Sathvikavenue1.jpeg'
 import Projectcard from '../homewrapper/shared/Projectcard';
 function Projectwrapper() {
     return (
@@ -193,6 +196,30 @@ take care of everything. 70 Units"
                         name="Sathvik Dream City"
                         desc="DSR Sathvik Dream City is a prestigious, BMRDA- approved residential layout located in the thriving suburb of Hoskote, Bangalore. Spread over a vast expanse, this well-planned township offers a perfect blend of urban connectivity and serene living,"
                         project_link="/sathvikdreamcity"
+                    />
+                </Grid.Col>
+                <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
+                    <Projectcard
+                        img={project10}
+                        name="Sathvik Amogha Plots"
+                        desc="Bangalore is fast developing into a world class city with stateof-the art infrastructure to meet the growing needs of discerning citizens. A hub of new generation enterprises a head quarter of Real estate companies,"
+                        project_link="/satvikamogaplots"
+                    />
+                </Grid.Col>
+                <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
+                    <Projectcard
+                        img={project11}
+                        name="Sathvik Fortune City"
+                        desc="DSR Fortune City is a prestigious, BMRDA-approved residential layout located in the thriving suburb of Hoskote, Bangalore. Spread over a vast expanse, this well-planned township offers a perfect blend of urban connectivity and serene living,"
+                        project_link="/satvikfortunecity"
+                    />
+                </Grid.Col>
+                <Grid.Col span={{ base: 12, md: 4, lg: 4 }}>
+                    <Projectcard
+                        img={project12}
+                        name="Sathvik Avenues"
+                        desc="Prime Location: Strategically located right on the National Highway, offering seamless connectivity. Proximity to VIT University: Just adjacent to the upcoming 100-acre VIT University campus, promising future growth and value appreciation."
+                        project_link="/sathvikavenue"
                     />
                 </Grid.Col>
             </Grid>

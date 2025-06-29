@@ -6,7 +6,7 @@ import { Carousel } from '@mantine/carousel';
 import slider1 from '../newprojectwrapper/newassets/slider1.jpg'
 import slider2 from '../newprojectwrapper/newassets/slider2.jpg'
 import slider3 from '../newprojectwrapper/newassets/slider3.jpg'
-function Projectbanner() {
+function Projectbanner({ image1, image2, image3 }) {
     const autoplay = useRef(Autoplay({ delay: 2000 }));
     const { height, width } = useViewportSize();
     let updateheight;
@@ -24,7 +24,7 @@ function Projectbanner() {
     return (
         <div style={{ height: updateheight, display: 'flex' }}>
             <Carousel
-                withControls={false}
+                withControls={true}
                 withIndicators
                 height="100%"
                 dragFree
@@ -35,13 +35,13 @@ function Projectbanner() {
                 onMouseLeave={autoplay.current.reset}
             >
                 <Carousel.Slide>
-                    <img src={slider3} width="100%" height="100%" />
+                    <img src={image1 || slider3} width="100%" height="100%" />
                 </Carousel.Slide>
                 <Carousel.Slide>
-                    <img src={slider2} width="100%" height="100%" />
+                    <img src={image2 || slider2} width="100%" height="100%" />
                 </Carousel.Slide>
                 <Carousel.Slide>
-                    <img src={slider1} width="100%" height="100%" />
+                    <img src={image3 || slider1} width="100%" height="100%" />
                 </Carousel.Slide>
             </Carousel>
         </div>

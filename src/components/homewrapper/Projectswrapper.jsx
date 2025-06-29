@@ -7,6 +7,10 @@ import realestate4 from '../../assets/realestate4.avif'
 import ventes_villa from '../../assets/ventes_slider5.jpeg'
 import Dsr_fortune_city from '../../assets/Dsr_fortune_city.jpeg'
 import mahidara_projrct from '../../assets/mahidara_project.jpg'
+import Sathvikfusioncity from '../../assets/Sathvikfusioncity.png'
+import sathvikdreamcity from '../../assets/sathvikdreamcity.png'
+import satvikamogaplot from '../../assets/satvikamogaplot.png'
+import Sathvikavenue from '../../assets/Sathvikavenue1.jpeg'
 import pruthvi_vivanthaa from '../../assets/pruthvi_vivantha.jpeg'
 import { Carousel } from '@mantine/carousel'
 import Autoplay from 'embla-carousel-autoplay';
@@ -17,6 +21,9 @@ import Satvik_Fortune from '../../assets/brochures/Satvik_Fortune.pdf'
 import pruthvi_homes from '../../assets/brochures/pruthvi_homes.pdf'
 import pruthvi_vivantha from '../../assets/brochures/pruthvi_vivantha.pdf'
 import Mahidhara_fortune from '../../assets/brochures/Mahidhara_fortune.pdf'
+import DSR_Sathvik_Fusion_city from '../../assets/brochures/DSR_Sathvik_Fusion_City.pdf'
+import DSR_Sathvik_Dream_City from '../../assets/brochures/DSR_Sathvik_Dream City.pdf'
+import Sathvik_Amogha_Plots_Brochure from '../../assets/brochures/Sathvik_Amogha_Plots_Brochure.pdf'
 import bank1 from '../../assets/bank1.png'
 import bank2 from '../../assets/bank2.png'
 import bank3 from '../../assets/bank3.png'
@@ -40,8 +47,48 @@ function Projectswrapper() {
                                 <Grid px={20}>
                                     <Grid.Col span={{ base: 12, md: 3, lg: 3 }}>
                                         <Latestprojectcard
+                                            image={Sathvikfusioncity}
+                                            title="Sathvik Fusion City"
+                                            location="Bengaluru, Karnataka."
+                                            desc="DSR Sathvik Fusion City is a prestigious, BMRDA - approved residential layout located in the thriving suburb of Hoskote, Bangalore. Spread over a vast expanse, this well-planned..,"
+                                            pdf={DSR_Sathvik_Fusion_city}
+                                            project_link="/sathvikfusioncity"
+                                        />
+                                    </Grid.Col>
+                                    <Grid.Col span={{ base: 12, md: 3, lg: 3 }}>
+                                        <Latestprojectcard
+                                            image={sathvikdreamcity}
+                                            title="Sathvik Dream City"
+                                            location="Bengaluru, Karnataka."
+                                            desc="DSR Sathvik Dream City is a prestigious, BMRDA- approved residential layout located in the thriving suburb of Hoskote, Bangalore. Spread over a vast expanse. this well-planned."
+                                            pdf={DSR_Sathvik_Dream_City}
+                                            project_link="/sathvikdreamcity"
+                                        />
+                                    </Grid.Col>
+                                    <Grid.Col span={{ base: 12, md: 3, lg: 3 }}>
+                                        <Latestprojectcard
+                                            image={satvikamogaplot}
+                                            title="Sathvik Amogha Plots"
+                                            location="Bengaluru, Karnataka."
+                                            desc="Bangalore is fast developing into a world class city with stateof-the art infrastructure to meet the growing needs of discerning citizens. A hub of new generation enterprises."
+                                            pdf={Sathvik_Amogha_Plots_Brochure}
+                                            project_link="/satvikamogaplots"
+                                        />
+                                    </Grid.Col>
+                                    <Grid.Col span={{ base: 12, md: 3, lg: 3 }}>
+                                        <Latestprojectcard
+                                            image={Sathvikavenue}
+                                            title="Sathvik Avenues"
+                                            location="Bengaluru, Karnataka."
+                                            desc="Prime Location: Strategically located right on the National Highway, offering seamless connectivity. Proximity to VIT University: Just adjacent to the upcoming 100-acre."
+                                            pdf=""
+                                            project_link="/sathvikavenue"
+                                        />
+                                    </Grid.Col>
+                                    <Grid.Col span={{ base: 12, md: 3, lg: 3 }}>
+                                        <Latestprojectcard
                                             image={mahidara_projrct}
-                                            title="MAHIDHARA CMR PPR FORTUNE CITY"
+                                            title="Mahidhara CMR  PPR fortune City"
                                             location="Bengaluru, Karnataka."
                                             desc="Living at Mahidhara Fortune City is a compliment to elegant engineering. For the connoisseurs of the fine living who wish to take the right size of living space, Fortune City."
                                             pdf={Mahidhara_fortune}
@@ -51,7 +98,7 @@ function Projectswrapper() {
                                     <Grid.Col span={{ base: 12, md: 3, lg: 3 }}>
                                         <Latestprojectcard
                                             image={Dsr_fortune_city}
-                                            title="SATVIK FORTUNE CITY"
+                                            title="Sathvik Fortune City"
                                             location="Bengaluru, Karnataka."
                                             desc="DSR Fortune City is a prestigious, BMRDA-approved residential layout located in the thriving suburb of Hoskote, Bangalore. Spread over a vast expanse, this well-planned township offers."
                                             pdf={Satvik_Fortune}
@@ -61,7 +108,7 @@ function Projectswrapper() {
                                     <Grid.Col span={{ base: 12, md: 3, lg: 3 }}>
                                         <Latestprojectcard
                                             image={ventes_villa}
-                                            title="PRUTHVI VIVANTA"
+                                            title="Pruthvi Vivanta"
                                             location="Bengaluru, Karnataka."
                                             desc="Our endeavor is to create a unique world for you, one that transports you to a realm of fine living and indulgence. Our Luxury Villa project in the flourishing environs of Bengaluru"
                                             pdf={pruthvi_vivantha}
@@ -71,7 +118,7 @@ function Projectswrapper() {
                                     <Grid.Col span={{ base: 12, md: 3, lg: 3 }}>
                                         <Latestprojectcard
                                             image={realestate3}
-                                            title="PRUTHVI HOMES"
+                                            title="Pruthvi Homes"
                                             location="Bengaluru, Karnataka."
                                             desc="Our endeavor is to create a unique world for you, one that transports you to a realm of fine living and indulgence. Our luxury Apartments project in the flourishing environs."
                                             pdf={pruthvi_homes}
